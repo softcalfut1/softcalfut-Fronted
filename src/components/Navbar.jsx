@@ -1,6 +1,6 @@
 import React from "react";
 
-function Navbar(props) {
+export default function Navbars(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container-fluid menu-ppal">
@@ -39,5 +39,3 @@ function Navbar(props) {
 
   )
 }
-
-export default Navbar
