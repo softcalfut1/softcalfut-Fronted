@@ -1,0 +1,239 @@
+/* https://www.onlinewebfonts.com */
+
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("MyriadPro/a89cf050c859a23e4b6d9cf5989acf9e.eot");
+    src: url("MyriadPro/a89cf050c859a23e4b6d9cf5989acf9e.eot?#iefix") format("embedded-opentype"),
+        url("a89cf050c859a23e4b6d9cf5989acf9e.woff2") format("woff2"),
+        url("a89cf050c859a23e4b6d9cf5989acf9e.woff") format("woff"),
+        url("a89cf050c859a23e4b6d9cf5989acf9e.ttf") format("truetype"),
+        url("a89cf050c859a23e4b6d9cf5989acf9e.svg#Myriad Pro") format("svg");
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("Helvetica/a64ff11d2c24584c767f6257e880dc65.eot");
+    src: url("Helvetica/a64ff11d2c24584c767f6257e880dc65.eot?#iefix") format("embedded-opentype"),
+        url("Helvetica/a64ff11d2c24584c767f6257e880dc65.woff2") format("woff2"),
+        url("Helvetica/a64ff11d2c24584c767f6257e880dc65.woff") format("woff"),
+        url("Helvetica/a64ff11d2c24584c767f6257e880dc65.ttf") format("truetype"),
+        url("Helvetica/a64ff11d2c24584c767f6257e880dc65.svg#Helvetica") format("svg");
+}
+
+/* font-family: 'Myriad Pro', 'Century Gothic', sans-serif; */
+
+/*
+  font-family: 'Zilla Slab', serif;
+  font-family: 'Roboto Slab', serif;
+  font-family: 'Pathway Gothic One', sans-serif;
+  
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  */
+
+
+/* Variables CSS */
+:root {
+    --color-sitio2: #007f4c;
+    --color-sitio: #003713;
+    --color-texto: white;
+    --fuente-sitio: 'Helvetica', sans-serif;
+
+    /* display */
+    --barra-header-top: inline-block;
+    --carrito-div: inline-block;
+    --carrito: none;
+    --buscar: inline-block;
+    --mi-cuenta: none;
+}
+
+
+/* CSS reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+fieldset,
+form,
+label,
+legend,
+caption,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    font-family: var(--fuente-sitio);
+}
+
+
+
+a:not([href]):not([tabindex]) {
+    color: black;
+}
+
+.menu-ppal {
+    width: 98%;
+    margin: 40px 0 0 0;
+    /*padding:10px;*/
+    max-width: 300px;
+    font-size: 1em;
+}
+
+.menu-ppal li {
+    list-style-type: none;
+    margin: 0;
+    transition: all linear 0.1s;
+}
+
+.menu-ppal li ul {
+    /*left:250px;*/
+    width: 260px;
+    display: none;
+    position: absolute;
+    top: inherit;
+    background-color: white;
+    text-align: left;
+    padding: 0;
+    box-shadow: 1px 1px 3px black;
+    border-radius: 5px;
+}
+
+.menu-ppal li ul a {
+    width: 100%;
+}
+
+.menu-ppal li a {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: var(--fuente-sitio);
+    text-decoration: none;
+    /*text-transform:uppercase;*/
+    vertical-align: middle;
+    width: 100%;
+    display: block;
+    background: transparent;
+    transition: all linear 0.1s;
+    border-radius: 15px;
+    padding: 3px 5px 0px 5px;
+}
+
+.menu-ppal li a:hover {
+    color: white;
+}
+
+.menu-ppal li:hover {
+    background-color: var(--color-sitio2);
+    text-decoration: none;
+    box-shadow: 1px 1px 3px black;
+    border-radius: 3px;
+    transform: scale(1.03);
+}
+
+.menu-ppal .activo {
+    color: white;
+    background-color: var(--color-sitio2);
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px black;
+}
+
+.menu-ppal .activo a {
+    color: black;
+}
+
+@media (min-width: 820px) {
+    .menu-ppal {
+        margin: 0;
+        max-width: none;
+    }
+
+    .menu-ppal li {
+        color: white;
+        display: inline-block;
+        /* border-left: solid 1px #70695C; */
+        /*margin: 0 4px 0 4px;*/
+    }
+
+    .menu-ppal li a {
+        padding: 2px 5px 3px 5px;
+        font-size: 1rem;
+        font-family: var(--fuente-sitio);
+        margin: 0 3px 0 3px;
+        /*line-height: 57px;*/
+        /*letter-spacing: 2px;*/
+    }
+}
+
+.menu-ppal li:hover ul {
+    display: block;
+}
+
+.menu-ppal li ul li {
+    float: none;
+    display: block;
+}
+
+.menu-ppal li img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.review form {
+    width: 100%;
+}
